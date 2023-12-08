@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <!-- Load TensorFlow.js -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/mesh-style.css">
+    </head>
+    <body>
+        <div id="liveView" class="videoView hidden">
+            <div id="container">
+                <video id="webcam" style="position: abso" autoplay playsinline></video>
+                <canvas class="output_canvas" id="output_canvas"></canvas>
+            </div>
+            <button id="webcamButton" class="mdc-button mdc-button--raised hidden">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">ENABLE WEBCAM</span>
+            </button>
+        </div>
+        <script src="./dist/handpose.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "name": "max-air-guitar",
+  "version": "1.0.0",
+  "description": "Strum on your air guitar in Max, using mediapipe and gen, with some help from mi-gen",
+  "main": "index.js",
+  "scripts": {
+    "pack": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/starakaj/max-air-guitar.git"
+  },
+  "keywords": [
+    "max",
+    "gen",
+    "mediapipe"
+  ],
+  "author": "Sam Tarakajian for Cycling '74",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starakaj/max-air-guitar/issues"
+  },
+  "homepage": "https://github.com/starakaj/max-air-guitar#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "ts-loader": "^9.5.0",
+    "typescript": "^4.8.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@mediapipe/drawing_utils": "^0.3.1675466124",
+    "@mediapipe/hands": "^0.4.1675469240",
+    "@mediapipe/tasks-vision": "^0.10.7",
+    "@types/offscreencanvas": "^2019.7.2"
+  }
+}
