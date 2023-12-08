@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 369.0, 180.0, 1010.0, 644.0 ],
+		"rect" : [ 369.0, 180.0, 974.0, 644.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,104 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubbleside" : 2,
+					"id" : "obj-31",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 835.0, 92.0, 151.0, 52.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 836.0, 92.0, 112.0, 66.0 ],
+					"text" : "4. Curl your left fingers to choose chords"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-25",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 716.0, 214.0, 150.0, 37.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 715.5, 214.0, 85.0, 64.0 ],
+					"text" : "3. Move your right hand to strum"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-23",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 756.0, 230.0, 150.0, 37.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 716.0, 369.0, 91.0, 51.0 ],
+					"text" : "(or drag to strum with the mouse)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 764.0, 254.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 718.0, 311.0, 94.0, 20.0 ],
+					"text" : "Strings are here"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 717.0, 301.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 718.0, 304.0, 94.0, 8.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 729.666666666666629, 225.0, 29.5, 22.0 ],
+					"text" : "!- 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "live.line",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 747.0, 295.0, 5.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 718.0, 337.0, 94.0, 8.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 0.223529411764706, 0.870588235294118, 0.231372549019608, 1.0 ],
 					"id" : "obj-65",
@@ -121,7 +219,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 22.0, 407.0, 221.0, 67.0 ],
-									"presentation_linecount" : 3,
 									"text" : "2. Pretend you're holding a pick and strum with your right hand"
 								}
 
@@ -157,7 +254,7 @@
 ,
 					"patching_rect" : [ 891.0, 107.0, 67.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 891.0, 104.0, 59.0, 22.0 ],
+					"presentation_rect" : [ 817.0, 178.0, 59.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -235,7 +332,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 823.0, 468.0, 50.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 908.0, 494.0, 50.0, 63.0 ],
+					"presentation_rect" : [ 742.0, 494.0, 50.0, 63.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -487,7 +584,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1157.0, 313.0, 114.0, 301.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 694.0, 176.0, 164.0, 432.0 ]
+					"presentation_rect" : [ 817.0, 265.0, 131.0, 343.0 ]
 				}
 
 			}
@@ -501,7 +598,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 928.0, 124.0, 63.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 891.0, 156.0, 67.0, 29.0 ],
+					"presentation_rect" : [ 817.0, 230.0, 67.0, 29.0 ],
 					"text" : "chords"
 				}
 
@@ -561,7 +658,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 265.0, 145.5, 154.0, 51.0 ],
-									"presentation_linecount" : 5,
 									"text" : "Amazing package for turning physical models into Gen patches"
 								}
 
@@ -621,7 +717,7 @@
 ,
 					"patching_rect" : [ 356.0, 82.0, 67.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 891.0, 128.0, 67.0, 22.0 ],
+					"presentation_rect" : [ 817.0, 202.0, 67.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1246,7 +1342,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 731.0, 520.0, 48.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 860.0, 472.0, 48.0, 136.0 ],
+					"presentation_rect" : [ 694.0, 472.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
@@ -1272,7 +1368,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 732.5, 679.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 910.0, 563.0, 45.0, 45.0 ]
+					"presentation_rect" : [ 744.0, 563.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -1759,7 +1855,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 729.666666666666629, 225.0, 149.0, 14.0 ],
+					"patching_rect" : [ 729.666666666666629, 256.0, 149.0, 14.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 694.0, 178.0, 18.0, 286.0 ],
 					"size" : 1.0
 				}
 
@@ -19053,7 +19151,7 @@
 				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-49",
-					"items" : "<empty>",
+					"items" : [ "Sam Tarakajian’s iPhone Camera", ",", "OBS Virtual Camera (m-de:vice)", ",", "FaceTime HD Camera (3A71:F4B5)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -19205,6 +19303,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
@@ -19275,7 +19380,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -19470,8 +19575,8 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "chords.txt",
-				"bootpath" : "~/c74/jweb-mediapipe",
-				"patcherrelativepath" : "../../../jweb-mediapipe",
+				"bootpath" : "~/c74/max-air-guitar/max-air-guitar/data",
+				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
