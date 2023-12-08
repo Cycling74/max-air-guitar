@@ -2,7 +2,7 @@
 	"name" : "max-air-guitar",
 	"version" : 1,
 	"creationdate" : 3784892201,
-	"modificationdate" : 3784892578,
+	"modificationdate" : 3784895293,
 	"viewrect" : [ 25.0, 119.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -14,6 +14,29 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+
+		}
+,
+		"media" : 		{
+			"how-to-chord.gif" : 			{
+				"kind" : "imagefile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/c74/max-air-guitar/max-air-guitar/media",
+					"projectrelativepath" : "./media"
+				}
+
+			}
+,
+			"how-to-strum.gif" : 			{
+				"kind" : "imagefile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/c74/max-air-guitar/max-air-guitar/media",
+					"projectrelativepath" : "./media"
+				}
+
 			}
 
 		}

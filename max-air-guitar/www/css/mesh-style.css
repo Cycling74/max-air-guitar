@@ -35,6 +35,15 @@ body {
 	-moz-transform: rotateY(180deg);
 }
 
+#waitbox {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .output_canvas {
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
