@@ -1,0 +1,47 @@
+body {
+	margin: 0px;
+}
+
+#container {
+	position: absolute;
+	top: 0px;
+	pointer-events: none;
+	display: flex;
+}
+
+#overlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#videoel {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	font-size: 0;
+	overflow: hidden;
+	clear: both;
+	display: block;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+
+#webcam {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+
+.output_canvas {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	position: absolute;
+}
+
+.hidden {
+	display: none;
+}
