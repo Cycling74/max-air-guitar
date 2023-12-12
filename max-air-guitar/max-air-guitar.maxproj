@@ -2,7 +2,7 @@
 	"name" : "max-air-guitar",
 	"version" : 1,
 	"creationdate" : 3784892201,
-	"modificationdate" : 3784895293,
+	"modificationdate" : 3785264930,
 	"viewrect" : [ 25.0, 119.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -15,40 +15,35 @@
 				"local" : 1,
 				"toplevel" : 1
 			}
+,
+			"zl.slicethree.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
 		"media" : 		{
 			"how-to-chord.gif" : 			{
 				"kind" : "imagefile",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/c74/max-air-guitar/max-air-guitar/media",
-					"projectrelativepath" : "./media"
-				}
-
+				"local" : 1
 			}
 ,
 			"how-to-strum.gif" : 			{
 				"kind" : "imagefile",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/c74/max-air-guitar/max-air-guitar/media",
-					"projectrelativepath" : "./media"
-				}
-
+				"local" : 1
 			}
 
 		}
 ,
 		"code" : 		{
-			"vector-math.js" : 			{
-				"kind" : "javascript",
+			"simple-plucked-string.gendsp" : 			{
+				"kind" : "gendsp",
 				"local" : 1
 			}
 ,
-			"simple-plucked-string.gendsp" : 			{
-				"kind" : "gendsp",
+			"vector-math.js" : 			{
+				"kind" : "javascript",
 				"local" : 1
 			}
 
@@ -57,12 +52,7 @@
 		"data" : 		{
 			"chords.txt" : 			{
 				"kind" : "textfile",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/c74/jweb-mediapipe",
-					"projectrelativepath" : "../../jweb-mediapipe"
-				}
-
+				"local" : 1
 			}
 
 		}

@@ -188,10 +188,19 @@ function onResultsHands() {
 
 			const maxDict = {hands: {}} as {hands: any};
 			results.landmarks.forEach((l, i) => {
+				let bigLongArray = l.reduce((prev, elt) => {
+					return prev.concat([elt.x, elt.y, elt.z])
+				}, []);
 				const handedness = results.handedness[i];
 				maxDict.hands[handedness[0].categoryName] = l;
+				maxApi.outlet(handedness[0].categoryName, ...bigLongArray);
 			})
 			
+			// Object.getOwnPropertyNames(maxDict.hands).forEach(key => {
+			// 	maxApi.outlet(key, maxDict.hands[key][0]);
+			// })
+			// maxApi.outlet("left", maxDict.hands["Left"].length);
+			// maxApi.outlet("right", ...(maxDict.hands["Right"]));
 			maxApi.setDict("landmarks", maxDict);
 			maxApi.outlet("bang");
 		}

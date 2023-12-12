@@ -179,6 +179,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 exports.__esModule = true;
 // Copyright 2023 The MediaPipe Authors.
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -339,9 +348,18 @@ function onResultsHands() {
             var maxApi_1 = window.max;
             var maxDict_1 = { hands: {} };
             results.landmarks.forEach(function (l, i) {
+                var bigLongArray = l.reduce(function (prev, elt) {
+                    return prev.concat([elt.x, elt.y, elt.z]);
+                }, []);
                 var handedness = results.handedness[i];
                 maxDict_1.hands[handedness[0].categoryName] = l;
+                maxApi_1.outlet.apply(maxApi_1, __spreadArray([handedness[0].categoryName], bigLongArray, false));
             });
+            // Object.getOwnPropertyNames(maxDict.hands).forEach(key => {
+            // 	maxApi.outlet(key, maxDict.hands[key][0]);
+            // })
+            // maxApi.outlet("left", maxDict.hands["Left"].length);
+            // maxApi.outlet("right", ...(maxDict.hands["Right"]));
             maxApi_1.setDict("landmarks", maxDict_1);
             maxApi_1.outlet("bang");
         }
