@@ -51,6 +51,8 @@ let maxApi = (window as any).max;
 let lastVideoTime = -1;
 let results: HandLandmarkerResult = undefined;
 let points: number[];
+let landmarkColor = "#FF0000";
+let connectorColor = "#00FF00";
 
 if (maxApi) {
 	bindMaxFunctions();
@@ -59,6 +61,14 @@ if (maxApi) {
         maxApi.outlet("open", deviceId);
         enableCam(null, deviceId);
     });
+
+	maxApi.bindInlet("landmarkColor", (color: string) => {
+		landmarkColor = color;
+	});
+
+	maxApi.bindInlet("connectorColor", (color: string) => {
+		connectorColor = color;
+	});
 
 	maxApi.bindInlet("string", function (...args: number[]) {
 		points = args.slice();
@@ -155,56 +165,16 @@ function enableCam(event: MouseEvent, deviceId?: string) {
 
 function onResultsHands() {
 
-    // canvas.save();
-    // canvas.clearRect(0, 0, overlay.width, overlay.height);
-    
-    // if(drawImage) {
-    //   canvas.drawImage(results.image, 0, 0, overlay.width, overlay.height);
-    // }
-    
-    // if (results.multiHandLandmarks && results.multiHandedness) {
-    //   const output = {};
-    //   for (let index = 0; index < results.multiHandLandmarks.length; index++) {
-        
-    //     const classification = results.multiHandedness[index];
-    //     const isRightHand = classification.label === 'Right';
-    //     const landmarks = results.multiHandLandmarks[index];
-  
-    //     const entry = {};
-    //     entry.landmarks = landmarks;
-    //     output[classification.label] = entry;
-  
-    //     if(drawHands) {
-    //       drawConnectors(
-    //         canvas, landmarks, HAND_CONNECTIONS,
-    //           {color: isRightHand ? '#00FF00' : '#FF0000'}),
-    //       drawLandmarks(canvas, landmarks, {
-    //         color: isRightHand ? '#00FF00' : '#FF0000',
-    //         fillColor: isRightHand ? '#FF0000' : '#00FF00',
-    //         radius: (x) => {
-    //           return lerp(x.from.z, -0.15, .1, 10, 1);
-    //         }
-    //       });
-    //     }
-    //   }
-  
-    //   //outputMaxDict(JSON.stringify(output));
-    //   setMaxDict(output);
-    //   outputMax("update");
-  
-    // }
-    // canvas.restore();
-
 	canvasCtx.save();
 	canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
 	if (results.landmarks) {
 		for (const landmarks of results.landmarks) {
 			drawing_utils.drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS, {
-				color: "#00FF00",
+				color: connectorColor,
 				lineWidth: 5
 			});
 			drawing_utils.drawLandmarks(canvasCtx, landmarks, {
-				color: "#FF0000",
+				color: landmarkColor,
 				lineWidth: 2,
 				radius: (x) => {
 					let l = lerp(x.from.z, -0.15, .1, 10, 1);
