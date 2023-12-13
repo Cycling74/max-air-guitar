@@ -55,8 +55,6 @@ let landmarkColor = "#FF0000";
 let connectorColor = "#00FF00";
 
 if (maxApi) {
-	bindMaxFunctions();
-
     maxApi.bindInlet("open", (deviceId: string) => {
         maxApi.outlet("open", deviceId);
         enableCam(null, deviceId);
@@ -75,6 +73,8 @@ if (maxApi) {
 	});
 
 	document.getElementById("webcamButton")!.classList.add("hidden");
+
+	bindMaxFunctions();
 } else {
     document.getElementById("webcamButton")!.classList.remove("hidden");
 }

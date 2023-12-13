@@ -221,7 +221,6 @@ var points;
 var landmarkColor = "#FF0000";
 var connectorColor = "#00FF00";
 if (maxApi) {
-    (0, max_bridge_1.bindMaxFunctions)();
     maxApi.bindInlet("open", function (deviceId) {
         maxApi.outlet("open", deviceId);
         enableCam(null, deviceId);
@@ -240,6 +239,7 @@ if (maxApi) {
         points = args.slice();
     });
     document.getElementById("webcamButton").classList.add("hidden");
+    (0, max_bridge_1.bindMaxFunctions)();
 }
 else {
     document.getElementById("webcamButton").classList.remove("hidden");
