@@ -15362,7 +15362,7 @@
 				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-49",
-					"items" : [ "Sam Tarakajian’s iPhone Camera", ",", "OBS Virtual Camera (m-de:vice)", ",", "FaceTime HD Camera (3A71:F4B5)" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
