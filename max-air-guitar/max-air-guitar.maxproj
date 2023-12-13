@@ -2,7 +2,7 @@
 	"name" : "max-air-guitar",
 	"version" : 1,
 	"creationdate" : 3784892201,
-	"modificationdate" : 3785264930,
+	"modificationdate" : 3785339547,
 	"viewrect" : [ 25.0, 119.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -58,6 +58,21 @@
 		}
 ,
 		"other" : 		{
+			"migen-integrated.genexpr" : 			{
+				"kind" : "genexpr",
+				"local" : 1
+			}
+,
+			"migen-lib.genexpr" : 			{
+				"kind" : "genexpr",
+				"local" : 1
+			}
+,
+			"migen-proxies.genexpr" : 			{
+				"kind" : "genexpr",
+				"local" : 1
+			}
+,
 			"air-guitar.html" : 			{
 				"kind" : "webpage",
 				"local" : 1,
